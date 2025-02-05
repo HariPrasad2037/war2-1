@@ -34,7 +34,7 @@ pipeline {
         }
         stage('Push to dockerhub'){
             steps{
-                sh 'echo "@docker#123" | docker login -u "kulashekaralwarn" --password-stdin'
+                sh 'echo "ajith123456" | docker login -u "ajith724" --password-stdin'
                 sh 'docker push ajith724/app'
             }
         }
@@ -50,7 +50,7 @@ pipeline {
         }
         stage('Run a container'){
             steps{
-                sh 'docker run -it -d --name chandu -p 8081:8080 ajith724/app'
+                sh 'docker run -it -d --name ajju -p 8081:8080 ajith724/app'
             }
         }
     }
