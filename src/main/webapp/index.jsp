@@ -1,85 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zepto HomePage</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superbikes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+        header {
+            background: black;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://img.freepik.com/free-photo/full-shot-adult-with-equipment-riding-motorcycle_23-2150781578.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .bike-card {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            background: #1e1e1e;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        }
+        .bike-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: black;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<body class="min-h-screen bg-gray-100">
-  <!-- Header -->
-  <header class="bg-white shadow p-4 sticky top-0 z-10">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-green-600">Zepto</h1>
-      <nav class="space-x-4">
-        <button class="bg-transparent hover:bg-gray-200 px-4 py-2 rounded">Home</button>
-        <button class="bg-transparent hover:bg-gray-200 px-4 py-2 rounded">Products</button>
-        <button class="bg-transparent hover:bg-gray-200 px-4 py-2 rounded">About</button>
-        <button class="bg-transparent hover:bg-gray-200 px-4 py-2 rounded">Contact</button>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="bg-green-600 text-white py-16">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-4">Groceries delivered in minutes</h2>
-      <p class="mb-6">Get your daily essentials delivered to your doorstep quickly and hassle-free.</p>
-      <button class="bg-white text-green-600 px-6 py-2 rounded-lg">Shop Now</button>
-    </div>
-  </section>
-
-  <!-- Featured Products -->
-  <section class="py-12">
-    <div class="container mx-auto">
-      <h3 class="text-2xl font-bold text-center mb-6">Featured Products</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white shadow rounded-lg">
-          <img src="https://b.zmtcdn.com/data/pictures/chains/9/51139/6b176f80af05e21cfb5af3c2ff7c82b4_featured_v2.jpg" alt="Product 1" class="w-full rounded-t-lg">
-          <div class="p-4 text-center">
-            <h4 class="text-lg font-bold">Product 1</h4>
-            <p class="text-gray-600">100rs</p>
-            <button class="mt-2 w-full bg-green-600 text-white px-4 py-2 rounded">Add to Cart</button>
-          </div>
+<body>
+    <header>Superbikes Collections</header>
+    <div class="hero">Feel the Speed</div>
+    <div class="container">
+        <div class="bike-card">
+            <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/188013/yamaha-r15-right-front-three-quarter10.webp?isig=0" alt="Bike 1">
+            <h3>Yamaha R1</h3>
+            <p>Top Speed: 186 mph</p>
         </div>
-        <div class="bg-white shadow rounded-lg">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE1tpexf_lqa9lmwDfY67WDDdijTV_PoAAGg&s" alt="Product 2" class="w-full rounded-t-lg">
-          <div class="p-4 text-center">
-            <h4 class="text-lg font-bold">Product 2</h4>
-            <p class="text-gray-600">30rs</p>
-            <button class="mt-2 w-full bg-green-600 text-white px-4 py-2 rounded">Add to Cart</button>
-          </div>
+        <div class="bike-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdZFfoYtilIgg7eZWOKss3blivJ6q9w2tKLQ&s" alt="Bike 2">
+            <h3>Ducati Panigale V4</h3>
+            <p>Top Speed: 202 mph</p>
         </div>
-        <div class="bg-white shadow rounded-lg">
-          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0_tbrJhFqRBvlE7U2ICxmKMfmAS80QxP_naYKScnbLyK_zrqKmX7dRX5KbrHRUV0zhJE7OcXxrbn-phcibPiCD5rG5_S2dBiJrBfKgB1SxheGEdBFd_VfFOqFR9BPQqnp_ZIeWgtpX8L6/s1600/DSC07710.JPG" alt="Product 3" class="w-full rounded-t-lg">
-          <div class="p-4 text-center">
-            <h4 class="text-lg font-bold">Product 3</h4>
-            <p class="text-gray-600">500rs</p>
-            <button class="mt-2 w-full bg-green-600 text-white px-4 py-2 rounded">Add to Cart</button>
-          </div>
+        <div class="bike-card">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQEhUQEBAVFhUVGBYXFhYYFRYWFRgVGBYXFhgXGBkYHSggGBomHRgWITEhJSkrLy4uFx8zODMtNygtLisBCgoKDg0OFxAQGi0lHx8tLSstLS0tLS0tLSsrLS0wLS0tLS0tLS0tLS0tLSstLS0tLS0tLSstNS0tLS4tKy0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQMEBQYCBwj/xABCEAACAQIEAwUEBwcDAgcAAAABAgMAEQQSITEFQVEGEyJhcTKBkaEHFCNCUrHBJDNictHh8IKSohUlFzVDU2Nzsv/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAkEQEBAQACAgECBwAAAAAAAAAAARECEiExQQPwEyJRcYGRof/aAAwDAQACEQMRAD8A8OootShaBKK6C0uWiabopzJSZKGuKK6y0ZaLrmiltRagSilpKAooooCiiigKKKKAooooCiiigKKKKAopaKBKKW1LloOaK7CUuWiaborvLSZaGuaK6tSUUlFFFBIjS9dqtNIxp1XJqud053QtXJi6V0OXn+ldKwvvWnPaaMZ6VzlqwVAQSaZyimJPqImWuLVJdBTZWpjc5GSKS1OZOQr1n6L/AKNTMwxOKFguttLDoNd3+QqOkV/0c/RhJjCs2JUpFzBGtvTmx6ctzyFendpfon4ZiYskUIw8irZJI/L8a7P57HzrbRKkShI1CqosAP8AN6r8bxFVvc3tqeg9TsBRXyx2t7LYjhk3cYhd7lJF1SReqn8wdRVHaveu2/abCYuNsLJGJ7nwZdFRrWDiQi+YXPsix614PIACbai5sfLlQc2otRSVAUUUlFFFFFAUUUUC0UCloCiiiiFFdiuRXQqpXVqULXSinFANVztNZDR3dPEim70JbTbLTZFOsabY1G44IoooqNO1rtKaU10GNVmw9flQxrguaM9VnDzPpbpXUMbvois1t7AmucHZnUPsTryr0DhOAL+CFVUAZmJIVEXm7sdFHmaE4PPCxp3B4aSeRYokLu2yj4knkABqSdABc17D2l+i9JIo48OS2Lfxd8biAqMoZGIvlFmzKbEnKethV4Hs/GzNwzh73jUf9wx1hd7f+jHyWO4Ph+8RrcKbxqcTX0XdiosVK0jSZhGbZ1U5A1r2jZhZ289rWNtRf3HEYuHCx5bqqoNrgADqSdB6msfjOI4bhcCQxgKFFkQHU8ySdySdS2pJNYmbjxnmDYiEyg6rCGKBrC4YqoZ3AHP/AJKKLv6PRsBx4Y9nWEtkU2DAEByCMwB3IF1udAc2l6wH0jTYkzdxHl7tQPCZFAL9Si3b/cANPOnZ+0OMxGGYxSLhIFORUjTJmJDEgFbldtTmO+w1rKQxurAOyLmvZmNxcKW1+FVWUxnE50dkaysLgjKP1vyO9VJNarifBTNnmOKWVk9pY0syxjc5WsSF52vod613YPsphQvfphpOIzKbBQmXDRNuA2chZGtYkFrDMNDvUHkt6fgwcj+yhPP3dfSvpk9ipceEbiKxxIhzLDFZnBsRZpLBFFjayLf+Kr6Ds9hMNF9XjiRY5DZ9BdltmKs27DKrakk+dRXzxgPotx88YlifDMp5jExke8jT51ExH0bcUQE/Vbgfhlib5B6+hMZ2zwWH8OHiaYi4BhRQmmh+1chSBzsTVb/4kEnVIIx5zNK/vVEAHxNXDXzNisK8TGOVGRhurAqw9xpmvoLj3GeHcRumM4ejclmRsko8wcoPuJI9a8t7Q9iTGGmwTPNEurKygTov4iq3DqObLtuQBTKmsfRRRUUtFJU/h3CZZ1Z1AEae1Ixsg8r8z5CggipWDwEsxtFGzE9B+tSzw2Ee1iR6LGxPzIFW2FIjVQp0GoPzvVxFdL2YxaLneNVXmWmhW19Nbvp76iz4Ap7UsV/4XD296XHzrfBUxOGJmzoGs2VSoOVSGDZiCBcDQW/vH7GYHGl+8wWFigDAftEyGRlHWPvbgk33RAD1FLEZvA9kcdNl7vDOc3s5h3Yb+XvMub3Xqt4ngZMNK8EwAkjNmAZXAO+6kivSu2mOn4YodMbLJiJ1ZXkbKCVuvsqostjfU3I111rykuSbk3J1JOpJPM0W8fk4zXpAa5vRmoxjo1waM1c3oshKWkvRUaArtmvXAooOr0t65ovVR2rWNxyr0XsZxnHYsnB4MJFDb7d2jRkCG4JlZgc5IvZeeuwBIyXZHs1LxGbuo/CijNNKR4Y4+bHqei8z5XI9bWHD4aNMPHdMMBmCICcRiH2JcaHWw12sRbkAVdYPDGaJcNBI64ZbhpLnvZySS9vwpct5a2tanXxEaR/VOGmLvBsqXcLyLOygqG83NvXaqWaSfEjLK31XDCw7tf3jjkpP9bAfhNRuKcWOGQQ4MxRrzVLs583cizH4+gq4Mn27gxGDlVWnjeSRSzlGLyodgGdhceWUA6VQ8L4lLBIJomyyC5DaMbsCpJzA3Nidal8UDuzO0YJJuSCoufQACqpw9/CAPU3qDUYnGYziGFnVwJFhjV1vGoUNnVbDKB4irOR/Kaq4OEyORNPMyC8rm3iMccZXKyK1gGLDILkedtaopxtnn21sLmx9BoDUrC8SZRlLieM2zRszBioYNlDHxAXA0Fx5VKl3xjb4zDpwdGbD9+/eIrRLMqNBIXIu6mMkMVstwQDcL51HftfDNAIZVKmQyXWN5I0jJYnOUWyu1yDcqb2PPSqNeNsv/l8skKtrJCWzJfqInup158hamcC+HxTiPFquHkci2JVSIjc2PfRXtY/jS1juCLkXSXW8x2AfheFXGwcYxKsbfZpG0iFtLhgGMSerAfG9ZHj30lY7GWSdo+6BP2YQKH0K3cg3vYnYgX5UxgcbjOHuQrnKGdCj6iytlIK62v0F/fTGPxSYovkwCrJYaxZlbOWWw7saNu1xlvttY0VCXibtpmNvwk6fEC3IbgbVb8PlDEKDlY7A2F/Q7H3VXy8PMek0LxPb2ZAymx55SAR8Ks8EMOojJlAfNdlcfZFBbLYn22JzAirErSYPgmIZlQROWYXAtrbrrsPPar18EmHiVosRmnVxneI3ijXVbZvvtcaldrEVUce49LMhTDyuYStjBe1xbaNvaKj8DE/lUTh0WKbh/fLGzpcpcFVyLG1yrLe51JtpzbyrSML274f3GMkAHhc5lNrX+623PMGrPVsMfmxy5CR3ue6knTxBVK+Xsj4U0/0dcSBI+rA2NriaG3/7rFaZnCw53VL2ubE9BzPuGtarj2NT6usUGkKnKBtc7kt/EdzVtwP6MMVctO8aaWADqza77Gw09d62HDfo6iiHiCsb3u5za9bbD3CrIlrxjuZGS4RsvNrWX4nStLwzhKGKF3zXJLBbeBkVV9rTW7vbzETV60/C4YR4nvyCqLknoBVVL3cuGxGKePKmHbJhowRefE5D4W08SKSt8ttmufCavXPJuuey2CV87SIHygAg7ZmswDDY+HUg8mXrWrbU7nrcg2tz291eO8M7QYmGLu/rLaszsEVVu7nMxeQgsxvoctvJqq+P9pp3XummY/w5mKr63JLN5sSammE+kji4xWNfI2aOICJDyOX2mHqxb3AVlxSUtZV1ei9c0tUF6L0UlQFFJRQFFJS0Ut6L0lFBtux/as4aL6uqLbMGsbXdxrcm1zysOWXrapWP7TYqxMciRZtSVALk/wATG7E+tYKFmDDLfNcWtqb8hbnXpE/Zy0JMkkayAXyFrnYEqNL6XtzqxGTbEvN+9md25h2J+HI+lXfDoMTIAsUbW6hTt1/vVe3Z/XxSogtfxZr+6w8q0HZrjpwDZc5ljJsyZbf6la+h92vOgr8XwPEL++Y3PwHpbf5VD/6GD7crHyFlFexk4fEwCZXQxtzJAseYN9iKyGP4KCO9w7iRLkXUhhcGx1G+tXE1kIuDQr9wH1ufzp76ktrBFt0sLVYyYZgL2sLkAkG1x6etNJwuKT9/ipCPwoojX37k/GmLrN8Uhw6HRyH/AApr8eQpzhuTEZVbvLqfCyxlrX6qhPlqANtjrW54dwHAKB3cMbHq3jN/9RNWwwwHsgC2wAAHwp1TsxXEeH4nDw99iJFdWY5LLK0jWAFzoCijo5B3sDVDhePYhcsa4iWOLMDYEqqN+MKNAQdSRrp5CvZOHYjXJIAyncMAQfUGme0X0cYfEIcThFysou0NgUIGpKjdTvpexpeJK8i4hh3kiM5kZnRys12L3zH7OTMdSCQwN+eXrTmAnxGGXMvjjcWZGXMjaXKlWFm/tfzrT4TszKEXKhmw8ishdLFkBIKd4LBwUYKblfxe+IOGFYzFPMikHMPGoKakLq2h1sAB8RrWJN2VjJd48jPDMQjn9nBDD2sMx1HnAzHX+Qn0NabhfEmX7WCUqx0fTRraZZY20J5a2YDYisAvBJpJbYZH8JN2ZhlWx9ouPDY6ner+fGJHk73EAznwmaNCY9NllJNpRqNdxc2NJz63HLteFyeZ/dn7/el4lg/q0y4uONiBIGZEAZQL3JW5zAb+Eg208Rq+wfHcPKC64tbbm5IbXqu9U03GmQhXAQkXDXzRuOqNz9DqKqppI5GEsii7AEWUZyLaEtbQG359a6yz4dpZymxocX2mcNbBhpCN2YZYx87mqfHdq+INo+IVPJBf5kfrUmGdmXKkdl6KDb/PWqHiOUOodsqk+I2JIUb2A1vy99OVWRYcGjxeJfvBiJAt8rPmIJH3lTfXqdh62BvO0uMEMa4ZD4stgNbRxk3yi/Njck7nUm5N6r4u2EEahYIwoUWBkzKLDayxq1/iKzPE+MhizKxeRjdnK5R/pF7n3gWtWdVxjMb3V1X2iP8Ab5+tUpa+poJvqaSstFopKKBaWuaWgWkoooCikooFopKWgKKKSgm8Jx/1eQTZAzLcpfZX+69udtwOtquuAdrvq7ySTwDEM9rZnKhSLkkixz6kaHQWrMgV33J3IoY0uI7W94xb6pFc75mlY/HMKdg7WxrYtw7Dt6vN+We1ZTLXQbqL1GcjXYjHy4iM4polhwyuEKwqqnXcLfVjYE66aa17dwaLDTYaNsGQYcoCW8tw19c19763vXzxjuM95BFhkTIsYNxmvmdjq2w5WFvXrV79GfaGfBTyZTeAI0k8Z9nKg9pfwvewB53ANa1cek9oOzoN2QWPyNYqeAqSCLEV7Lw/FQY2FZ4HDo40I68wRyI2IrG9suECJWmt4VBYnyAua0z6YYKRtpV3wjFyewSNdAzXsp5Egbi+4uPWqNeJYci4mS38wB+B1rkdrYYdY1aUjp4F+JF/gDSVaRvpBYLlaFWkzEFlzKgHKwbxE772qJie0U2KGV52K/8AtglU9Co9r33qP224dC2IWfAusseIXPlQgmOTTOrDdLkg629o9KpsJgJHfKqTGxs2SPMw62111+NZtp4avhGOlisI5XUA5rBiAGta4HI25jWtjHPHjE/bIVkII8Y8D6bZivtjfRr0nZXsNCVzTTzNYAhcncEg/iDAsCD0IrSDARxJ3ca2W97Elrna5LXJOg1rUiWsF2h4c5Vh3ngt4RlZUQ3vmtGct9hdhWLxsLLFkc3A1DctLkj1rfca42FeXCywOpIISRfFGwZTa99UO4t4tjWG4pIO6ZD7RIsNCdNz5b1i8Z8N/S5dJk9HOyMUmJlGFWVlVwxXWxDBWIAI2Jta/wDFVnwHtA0hYYg2ZWJFooyVUm+VSR4Re9UvZnGfV5IZhukqn3DxfpWgxPCO4mn6GVyP5cxyD4EfGpx8cnHxOdn8r1uKoVyQ3ZjvmzGw6m/LyFY7tN3MRu4zyn7p2Hm3QeVPTcY7sd3hQHmb2m0sn9bfAb1RLEVk8cYlkY3JMiOL87BTr7z7hXTly1uRUSMSbnn5WHurlVJ2F63WHUMbnew2UXty16VKbDGJbwRC99coF/W25qY1rMcO7IYuYA92EU/ekbL8va+VXEX0dyEeLFwg9AHP6CnkxspPiJB5g3+Yp3/qiruxJ6DWmRNqox3YPFRi6GOUfwPZrejgfK9ZrE4d42ySIysOTAg/A1v4+0I/A3xFLjMVDilyOL9AwswP8Lcj76Ya87oqw4twswG4N0Ox5jyPn+dV1ZaLRRSUBRRRQFLSUtAUUVpOxvZ/6y/eSD7JN/4j09KBjhBMdpfqSSKBp3nelSepCMpI8r2pcVx1JD4sJGgvqI2dR52EhcD02rW9oeLKf2eGwA0JrFYyBSTY2AOpPXoKtiPQux/CeDY4ZUWTvRqUdgGFuYUDLIB0sfMV32j7IYyM5sFHg5Iun1PDd6m+4aM5hsLjrsBrXluHxLRSLJCzKyEFW2II516ZwTt3jvsmlw5kjkkWIShGTxswFg4GRm8rcqCZwXsPFLAZ58ZErBbyLBEkaoq6nNoutgbnKB061leG4QNBlUFfrkxdmO64LD3a56ZnBJ84a230jYuJMPNnjIdlyK6nKWZrCzcmFifOyttzwr8azQyyOmR54u4iVBaNVQxqxAJuFyrl53JaqOexfbWTh05ZATBIxMkZP3eTINg4Hx2PIjYfSJ2nm4hCsOBilML2Z5O6kHeLyCkjRL79bdL38tnhVEjU7sC2boLlQPTwt8vSt79E/as4aT6lO1opD9mSdFkPL+Vvzt1NSFYqPg83NLeunyOtP4fg9j9owHkOnvr27tnwlZU7zKDWCPZ+OQeElD8R8KvVNUuHCJotgP8AN+pqswvaPE4fELOkrnunJCl2KlbkFbE7EEr6GrfifBGwuXvp1AYOy5ULFljAZraixsRobVRCXCL9zES318TpEP8AaiuT8RUpr13gfbKPFYgwiORXVA92KW1Ckpod9flU7tZxkYaEup8TaR6X8RGhtzA3+VeW4biMMcaOuBwysxYKzF5CpUKQcrkm12GoI2q/4POcdC31whznK6exlXKyhRtbXffrWptS+PKj4nOcdocUkLo+WSOU5VGts6Psb6XuQ2+4qygjjEOSWSFxGVi+zdXJjYSOLllzWzE6BreMaGo/a3hKL9rHYqUyMLWN9crH00UdAB7qvsvhWAR2WwZj9p3gOygWyAaMLkXJG/lT1V+EXF8ClDF4wQmhGbwkcrZbcutgKteK4eSSOJsS7ssiiQBQSACqlcxUFmGp9PysOLY9YCAyFlYHxjXbcMDtU446NYsMTIq/s8ai7AXYAA78xas2Sco5cr+biyXCeDzysSiqkW2axVT72Gdvdf3VsOG/R/JNl9pFYhe9mIgiJJ0WNb55CeVtDWr7F4eBQmKxjC0h/Z0ZgAxvYMQT4iTsvoeYtI7SdsYMDOUXu1mZc5lmaRiAxYABrHKunsjSrmOusX2p4FFwuWDDySQvJIGayqSdSFBa42NrD0akhVCLqAp/hJy39Dp8LVie0+MmxWJOJkxMUsjlSDGzaWtlUKRcAW/y9aRcTZlY6Zh4x0YDf9PhVlSxPlAcZWF/X9OlVGL4d3YzQxd5Y6qSb2/gsN/WnuMYXEuYmwgzMcwewUkDQjflvTk+CxioSquxtcBo7j/iBSjOScVkYnJDoPaVlYsNbalSDa+lOQYhJdCjRvyDewfIMQMp/m08xUrio4gih0ikVR7R7vUGwNiCLgWO9U+N47iDYiZwG+6CBlI3XTX+xFZVYvzilGm2u4+Oot8R+WZxmGMblDy2PUcqvuG4ozxlWN5IxcHmyaDXqV01/Cf4RUPi0WaMPzU2PodvnUWKaiiiiiiiigKKKKCRgMK00ixLuxt6DmfcLn3V6TxOZcFhhHHoSLDras59HmDvJJMfugKPVtT8h/yp/tJP32ICX0X8hrWp4jN9qqaQqvPM2rEbgch6n+tQjCXZVALu3hRF5E7AW35evuqX3wIYnTY3Og19kethWt7E8ISCN+ITOtmziNjmKqighnOnizMQtrqbBrHWoqKex6YOEyYxrykfuhIgRQbAXKnMxJzrbTWNhroTvMJgO5g4VgiNI45cfKOWdrrF85XP+ivOO22N73FJKkyvHZXSO4yrqbnwk3uRmudfFqNK0EHaz6y2Pxzt3WRMOscVwSsaLIO7B0uC7CzdSLjlQVf0j8QaedMLF4iGAsOcjWyj11HwNVHabAyYSSLNHeAxhIjbwyKpOdh0Jcs/oymmuBzs88mLLWyBmDGwHeOCqnXQEXZ78staSTiLcRgjw8jxxAsl5HCxhpEQrmQAE2y2S9xyFgLir7GS49hgr5NPCqWI2NkUOPUMGB8xUGB7jz/zY1oe3HBfqTRxZmJK59UygZtwpLEtc6m9iLjrWXgYAm+3pf8AWsj2/wCjvtSMZEcLiDeVBa5++vJvXr5+tRsZAYZmQ7XuPSvM+FPJh5RiISQ0SCYhhlzRlkXSxN75x8K9e4rKmLw0eNi6At1F9GB9D+Vb41mxkO2HEIxLDFILgxubjcZjkuPcD5VheI8PaFwim62zK3Jl6j0ubitfxR/+5QPoQqRKRuPE73B9xNZCDiYF4ZLmIk2t7SG+jL+o51m3as9FxaoY1YyWZWyhMp1vbM2bYDTY/wBbarsliVEJUHUOSfeBY/L5VjPYZkIDBhYHYEHVWB5a2+ddYFZAc0cuU21JOW3kb7jb41Zcq2a3nFceFABAYsQAp2I538v61iOH8QMb6HTMTa/h319PWrDhal2WaUscgJdnJyb+EWWxNvwjc13iIsO2IHeoyqws63KyAkXD7WBJHsnkwq275STE7iKvNCxuqjKSBmDE+Qtprt76Zmx74NzGqI5yBXzIGSxANrHc/kDaqjhjCKYB2ZUUhnXfwix1CnU7bf2q84jFhJZY3zsXlIOWN7FixygOX0jOgGl6xfPJyu/iSfEn+pvCOLJjMRGHw4EkVnR0ZgFyMH1jY2tffmb1J7Xz/WcSXmSMgqq5xIqAWGmhYWOxIt9/S9P8Q4DxCBRFBhYoEcA3WRXZr82cnX13qh7YYX6n4Y7sJRYuyXygBAcrjS7OJPOyr1rXw6q58JFE4KWOm4bMAemvOpAxWtzVVErSa5+Q5XGgtUdp2W1+f9bVNVpJsYHUIdsyn4MD+lQIZjNJljd0Qe0VJHhBtYWOt9h61XYaXvHCs1hz6nyFXSYXJh2ZSkbGxzAnUFgosdTezX+NPY2fZvhcmIVJI5CsQzEs7tmchlW8bXJYA3BbQA2sWtTHaXgX2X7TlaM5gsy3LRPnyFiTqVzDxKSRYgggi1WWJx5w7wxBlCKViUd4PCL5CBlNwuUqSDpdQet7DCSx4rB4lckkWdS/dTGzIobIpAOynK5C6+JjaqjxbCk4fEWkHsOUkGhBXVZB5grmHvq2xUVhLETcjMCerLcE/EGq/tI2abOSLtFAzeTGFLg+f9atsf8AvHPrf1N71mKyNFFFFFFFFAUUUUG47GP3eGZusjfJV/vVX3mZ535hTb3m1LwXE2wxHSRvmq/0qNgGv34/+Mn1ykG1VHWIaPJYmzC9ri4Yb5T5fluK9N7Z9nHfAwQ4UIAFw4a+mgSzrfKLkyIDck7bgWry3icOZFK716HxniUs/DlN2P7iUqC15AsQgMdka5ALC+3s+V6DDFkyWUg92uXVSDmO+vMXIvUTh+BaeZUy5rkBgrhQdL7nRRpcnlarPHs2VY2jKuAc5IYHXLlDXsf6g0zwiaaJ7qqhla6MUBJOotc7qRoQbj9QseJYI4GKOLNDI0rLICDmRgSVzLpsLZbnnfQGq3ETyQYtGyDNG0eUMSQSLHxXJ3JufW9TOI8RlnOaWCM5Fyqouiqim9lyWy6knTr1qThOFtju8YYQFhbM/fy6Eg/dscx8NrD9aCw+kXxYTDuxu0cjR3028a+raRJqeleesNL+dvyrU9ou1RxEX1MYeBEjfRlDO11Nrq7G9jr8TWanXKijmST+lSrWkw+Kjl4fI2a2IgiELD8cBxUDxt6qS6emSrPsxxx4sHOgkIV0Y9WDDIpIvcC99fQ1juESaTR85Yio9Vkjmt7+7t76mYDEKAS48KqSF5Nc5iPQlWHvHSgmyTiGP+MDvHJJJEkgtEhJN7hfEfO9Zer3FYWRo1dwSHLOzZ1X7QmxvfoNPjVKxHIH43/SoHYSGsjNl/CxvZb9ba2/KrGLhcjN4bMLXLI1l9cz2B62FRrwNCfaWUZbDUq1r5jfkTcdPZ86v+y+LEilHAJQADT7m1v861qImzcCHcNI09wAjRxxo+XxDxKXvpvvTMXBSELO5fOUkzhixUW0cIo8Zsdr2q3wU+WKaPK791I9lW1+7IVhudFAa3utVNwrh8kx7jDQyrnALyObtkQ2ESDSyg+dyRvYVbggcPmWRh33fMRYBVy+LnsWuGub2q1xHD8J4CXLZwZBklikkN+TAoTfQG2m+1UPFoTh5MrNdkJ8SMHVWGoswNmINr22N97VW4TiLxv3gCsb3swuL+61TTGxSKFe8yRY3XMEPchcoNrbITm3189qj8S4jjWlzxGREACIpikAyKCAXXIVLm5ueZNZbE8SkkNyQPIDT51xiMU0ti9iRpoqrpe/3QL633ppjRDHkH7bBRsTe7Rq8JubanQKTfy51XGOKZ7Z+68WmfxKBpcFl56E3tVSpsav4olmhBUWIBRvjdW+YHvPSoGsR2fl9uApKutjE4YixOmXRvlzFPYKXvI2hcEEg7ixv5X+PxqDPiFiIijJ0vnf2WLHkPwqNPz6W0fDJ8NYGY5roNe8W4kFrjx/zH3Xqi94Vmx0AR4CNQZSFIBYKczhz4WLbgX8JI0sAalcU4kvcDDRSbxIsz584SPKud2YCxI1AIG7Ha9ZjH8fWMlEiRlIUhhI4uhFhnVTp1N9fcapeM8Td1yCyxtbRQRnA2ZiTdtb2B2pqYjYiT61iSRoHYAeSCyLf0UD4VMx+Ivnk/FmYX38RJA+dM8MwxVS53cFR5LszfC49/lUbis33ev5f5aosVlFFFFFFFFAUUUUE/hs1g6dQCPUf2PyrrhuIyTKW2Phb0bQ1BicqQRypyUDcbGgtsvdv3T8iQD+XxFj761nZHGmEJh2Ym5ZlHkzAsovpsCdr6mxFZ7DIuMguNZoRaRdy8QOjjmSt9QOvW1QcViGQqctwtspvseRBHM2Fj5aVfSNJxXhWJkxYATPFK3hshyqFAIVlA8BUAettL7CO37O3cYhCzl1USAEKCGuVW+91IHi1FPcH+kAxWEiNyuyG1xpe6ggXtz89qtZu2HD3Odo0LEhmJgN2cFTmYWtm0bW+nnVFfLwnELijEkeXQSAm5TV8qqWOmnzynfnou2PHxg4CFKmaYMqANmK2yqZDcm9rMAxOYHqLkZ/iP0hFgRGrHU6k5b5hY2Gp5sAL7HmaxcrSzyZnJZzvfkPPoB0qWhvDREn0/Ouca9yANlFqmTkRjKpv1PU9ariKg5ViDcGxFPNKWGUbdOhO9vKm8tGWmGtjwbu5luMT3bfejIlNz1Hda/8SPPcU+ezcTsWfGgEg+ExzOedsx8ItYddAaxBBpMtMNT+LYSOOQrHOsi8mC5b9fCCbD30yIigEgcWa4FnGbTqoNwKjZaMtMFpDxp0zAOxLBQx6hRZRe4Om1cTcbkYW5ba66XJttfmefOq7LRlpg6xM5kJYgDyUWUaW0A2pqu8tGWim66U0uWjLTAVP4Xje6bXVTow309P83NQLUURf47hiyWdXAv946g9Mx5H+Lnz13YXszMTo8RH/wBqqf8Aa9m+VQ8DxFottV/CfnbpVvBxaEge0nluB6bj8qolwcAKrlVDb70hym56C1wo+PnTMvDlL3a38KLa3y0A9NPWkfisfOUn4X/4reo0/HAAREup3Y/n1PvomHeIzhBqRcjboBsPID51nJpMxvXc8xY3Jvfc9aatUaJRRRQFFFFB0BXWWnQldZKuM9jIWugKdy0Wq4nZxhcS8LiSNirKbgj/ADUeVavBcSw2K/eZIZDup0hYndlbXuyTqQQVPMNpbLMoNMmI1PSytXxPs4AM6qy7H2bi3qgbN6nL6VSNgHvojH0Rh88tRcPjJo9I5HUdAxA+G1PNxTEHeVvjRUqDhbDWQrEOZJu/9vlRPio4xkgHqeZ9arXZ21ZiffehVomlOuppLUuWly1U1zaiu8tGWhrikpzJS5KuIaop3JRkqYaaotTuSlyUw0zajLT2WjLTDTOWjLT2Wly1cNMZaQrT+WkyVMXUfu6MhqTkoyUw7I2Sly1Iy0ZKYdkbJSZalZKTJTDsi5aQrUopXDJUxeyPainSlFTF1IFBFFFdHMZaMtFFAZKMlFFDS5KMlFFMC5KMtFFAZaW1FFEFqLUUUBai1FFAWotRRQFqLUUUBai1FFAWpbUlFAWpbUlFAtqS1FFAWpbUUUBai1FFAhrhqKKKaNFFFZaf/9k=" alt="Bike 3">
+            <h3>Kawasaki Ninja H2</h3>
+            <p>Top Speed: 209 mph</p>
         </div>
-      </div>
     </div>
-  </section>
-
-  <!-- Categories -->
-  <section class="bg-gray-200 py-12">
-    <div class="container mx-auto">
-      <h3 class="text-2xl font-bold text-center mb-6">Shop by Categories</h3>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-white p-4 rounded-lg shadow text-center text-green-600 font-bold">Fruits</div>
-        <div class="bg-white p-4 rounded-lg shadow text-center text-green-600 font-bold">Vegetables</div>
-        <div class="bg-white p-4 rounded-lg shadow text-center text-green-600 font-bold">Dairy</div>
-        <div class="bg-white p-4 rounded-lg shadow text-center text-green-600 font-bold">Snacks</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-white py-6 mt-12 shadow">
-    <div class="container mx-auto text-center">
-      <p class="text-gray-600">&copy; 2025 Zepto. All Rights Reserved.</p>
-    </div>
-  </footer>
+    <footer>&copy; 2025 Superbikes | All Rights Reserved</footer>
 </body>
 </html>

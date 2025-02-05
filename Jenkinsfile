@@ -9,10 +9,10 @@ pipeline {
         stage('Check and remove container'){
             steps{
                 script{
-                    def containerExists = sh(script: "docker ps -q -f name=ajju", returnStdout: true).trim()
+                    def containerExists = sh(script: "docker ps -q -f name=hari", returnStdout: true).trim()
                     if (containerExists) {
-                    sh "docker stop ajju"
-                    sh "docker rm ajju"
+                    sh "docker stop hari"
+                    sh "docker rm hari"
                     }
                 }
             }
@@ -24,18 +24,18 @@ pipeline {
         }
         stage('Create image'){
             steps{
-                sh 'sudo docker build -t app /var/lib/jenkins/workspace/jenkins/'
+                sh 'sudo docker build -t app /var/lib/jenkins/workspace/webproj/'
             }
         }
         stage('Assign tag'){
             steps{
-                sh 'docker tag app ajith724/app'
+                sh 'docker tag app hari1802/app'
             }
         }
         stage('Push to dockerhub'){
             steps{
-                sh 'echo "ajith123456" | docker login -u "ajith724" --password-stdin'
-                sh 'docker push ajith724/app'
+                sh 'echo "@Hariprasad@02" | docker login -u "hari1802" --password-stdin'
+                sh 'docker push hari1802/app'
             }
         }
         stage('Remove images'){
@@ -45,12 +45,12 @@ pipeline {
         }
         stage('Pull image from DockerHub'){
             steps{
-                sh 'docker pull ajith724/app'
+                sh 'docker pull hari1802/app'
             }
         }
         stage('Run a container'){
             steps{
-                sh 'docker run -it -d --name ajju -p 8081:8080 ajith724/app'
+                sh 'docker run -it -d --name hari -p 8081:8080 hari1802/app'
             }
         }
     }
@@ -59,11 +59,11 @@ pipeline {
             echo 'Deployment successful'
         }
         failure {
-            sh 'docker rm -f ajju'
+            sh 'docker rm -f hari'
         }
         always{
             echo 'Deployed'
         }
-    }
+   }
 
 }
